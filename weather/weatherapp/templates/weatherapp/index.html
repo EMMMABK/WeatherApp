@@ -16,12 +16,12 @@
     <div class="comparison_container">
         {% if weather_data1 %}
         <div class="city_container">
-
+            {% include 'weatherapp/city_weather.html' with weather_data=weather_data1 daily_forecasts=daily_forecasts1 %}
         </div>
         {% endif %}
         {% if weather_data2 %}
         <div class="city_container">
-            
+            {% include 'weatherapp/city_weather.html' with weather_data=weather_data2 daily_forecasts=daily_forecasts2 %}
         </div>
         {% endif %}
     </div>
